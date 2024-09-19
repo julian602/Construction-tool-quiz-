@@ -1,7 +1,29 @@
-# Julians quiz for what type of construction tool you are
 
-def quiz():
-    print("Welcome to the construction quiz")
+
+#this section of code is a file you would create and title it main
+import random
+import Q1
+import Q2
+
+num = random.randrange(0, 2)
+print(num)
+
+if num == 0:
+    Q1.quiz1()
+elif num == 1:
+    Q2.quiz2()
+
+
+
+
+
+
+#this section of code is where you would type Q1 in the file to initialize it.
+def quiz1(): #construction quiz
+    print("quiz 1 selected1")
+    
+    
+    print("What construction tool are you? Quiz!")
     print("Answer the following questions to find out what type of construction tool you are.\n")
 
     # Points accumulator
@@ -163,5 +185,165 @@ def quiz():
 
     print(f"You are a {tool}! You're strong, reliable, and always up for a challenge.")
 
-quiz()
+
+
+
+
+
+
+
+
+
+
+
+
+#this section of the code is where you would type Q2 on the file name to initialize it
+def quiz2():
+    print("What country should you travel to? Quiz!")
+    print("Answer the following 7 questions to find out your ideal travel destination")
+
+    # Initialize scores for four different countries
+    scores = {
+        'Japan': 0,
+        'France': 0,
+        'Brazil': 0,
+        'Australia': 0
+    }
+
+    # Question 1
+    print("1. What type of weather do you prefer?")
+    print("a) Cold and snowy\nb) Mild and rainy\nc) Warm and sunny\nd) Hot and dry")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Question 2
+    print("\n2. What kind of food do you enjoy?")
+    print("a) Sushi and seafood\nb) Cheese and pastries\nc) Tropical fruits and barbecue\nd) BBQ and seafood")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Question 3
+    print("\n3. What kind of activities do you prefer?")
+    print("a) Exploring historical sites\nb) Visiting museums and art galleries\nc) Going to the beach and dancing\n"
+          "d) Surfing and outdoor adventures")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Question 4
+    print("\n4. How do you feel about crowds?")
+    print("a) I enjoy them and the hustle and bustle.\n"
+          "b) I prefer quieter, more serene environments.\n"
+          "c) I don't mind, as long as there are exciting activities.\n"
+          "d) I like a mix of both.")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':+= 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Question 6
+    print("\n6. What type of cultural experience are you seeking?")
+    print("a) Traditional and historical\nb) Artistic and intellectual\nc) Vibrant and lively\n"
+          "d) Outdoor and adventurous")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Question 7
+    print("\n7. What’s your ideal length of vacation?")
+    print("a) A week or more\nb) A long weekend\nc) A couple of weeks\nd) A short trip")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Determine the ideal country to travel to
+    ideal_country = max(scores, key=scores.get)
+    print(f"You should travel to {ideal_country}!")
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Question 5
+    print("\n5. What kind of accommodation do you prefer?")
+    print("a) Traditional and authentic\nb) Luxurious and comfortable\nc) Simple and budget-friendly\nd) Modern and convenient")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Question 6
+    print("\n6. What type of cultural experience are you seeking?")
+    print("a) Traditional and historical\nb) Artistic and intellectual\nc) Vibrant and lively\n"
+          "d) Outdoor and adventurous")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Question 7
+    print("\n7. What’s your ideal length of vacation?")
+    print("a) A week or more\nb) A long weekend\nc) A couple of weeks\nd) A short trip")
+    answer = input("Your answer (a/b/c/d): ")
+    if answer == 'a':
+        scores['Japan'] += 1
+    elif answer == 'b':
+        scores['France'] += 1
+    elif answer == 'c':
+        scores['Brazil'] += 1
+    elif answer == 'd':
+        scores['Australia'] += 1
+
+    # Determine the ideal country to travel to
+    ideal_country = max(scores, key=scores.get)
+    print(f"You should travel to {ideal_country}!")
 
